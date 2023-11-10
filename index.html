@@ -119,20 +119,7 @@
   display: none;
 }
 
-/* Define grid styles */
-.grid-container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-        gap: 10px; /* Adjust the gap between grid items */
-      }
-  
-      /* Define item styles (optional) */
-      .grid-item {
-        border: 1px solid #000;
-        padding: 20px;
-        text-align: center;
-      }
+
 
 
 
@@ -155,7 +142,9 @@ body {
     .box {
       border: thin solid rgb(216, 216, 216);
       box-shadow: 0px 3px 3px #747474;
-      margin-bottom: 20px;
+      margin-bottom: 0px;
+      z-index: 10;
+      position: relative
     }
 
     .visit-section {
@@ -170,6 +159,7 @@ body {
       font-size: large;
       font-weight: 700;
       border-bottom: 1px solid #ddd;
+      margin-top: 2%;
     }
 
     .grid-container-codes-title {
@@ -185,6 +175,7 @@ body {
       grid-template-columns: 1fr 2fr;
       gap: 10px;
       background-color: #fff;
+      z-index: 2;
     }
 
     .OR {
@@ -193,6 +184,26 @@ body {
       text-align: center;
       font-weight: 700;
     }
+
+    .learn-more-button {
+      background-color: #4caf50;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      margin-top: 0px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+      z-index: 1;
+    }
+
+    .learn-more-button:hover {
+      color:#050000
+    }
+
 
     /* Single Implant */
 
@@ -232,6 +243,7 @@ body {
               <p>Professional Consult</p>
             </div></div>
           </div>
+          <button class="learn-more-button" onclick="learnMore('visit1')">Learn More About This Visit</button>
         
           <!-- Visit 2 -->
           <div class="visit">Visit 2</div>
@@ -272,6 +284,7 @@ body {
               <p>CT Capture Full Arch</p>
             </div></div>
           </div>
+          <button class="learn-more-button" onclick="learnMore('visit1')">Learn More About This Visit</button>
         
           <!-- Visit 3 -->
           <div class="visit">Visit 3</div>
@@ -286,6 +299,7 @@ body {
               <p>Endosteal Implant Placement</p>
             </div></div>
           </div>
+          <button class="learn-more-button" onclick="learnMore('visit1')">Learn More About This Visit</button>
         
           <!-- Visit 4 -->
           <div class="visit">Visit 4</div>
@@ -300,6 +314,7 @@ body {
               <p>Post Op</p>
             </div></div>
           </div>
+          <button class="learn-more-button" onclick="learnMore('visit1')">Learn More About This Visit</button>
         
           <!-- Visit 5 -->
           <div class="visit">Visit 5</div>
@@ -314,6 +329,7 @@ body {
               <p>Second Stage Implant Surgery</p>
             </div></div>
           </div>
+          <button class="learn-more-button" onclick="learnMore('visit1')">Learn More About This Visit</button>
 
           <!-- Visit 6 -->
           <div class="visit">Visit 6</div>
@@ -332,6 +348,7 @@ body {
               <p>Provisional Implant Crown</p>
             </div></div>
             </div>
+            <button class="learn-more-button" onclick="learnMore('visit1')">Learn More About This Visit</button>
 
 
             <!-- Visit 7 -->
@@ -347,6 +364,7 @@ body {
               <p>Seat Crown - Cement</p>
             </div></div>
           </div>
+          <button class="learn-more-button" onclick="learnMore('visit1')">Learn More About This Visit</button>
         
           <!-- Visit 8 -->
           <div class="visit">Visit 8</div>
@@ -376,6 +394,7 @@ body {
                 <p>Final Impression Tooth #</p>
               </div></div>
           </div>
+          <button class="learn-more-button" onclick="learnMore('visit1')">Learn More About This Visit</button>
           
         
           <!-- Visit 9 -->
@@ -394,6 +413,7 @@ body {
               <p>Occlusal Guard Hard Appliance - Full Arch</p>
             </div></div>
           </div>
+          <button class="learn-more-button" onclick="learnMore('visit1')">Learn More About This Visit</button>
 
 <!-- Visit 10 -->
           <div class="visit">Visit 10</div>
@@ -408,6 +428,7 @@ body {
               <p>Deliver Occlusal Guard</p>
             </div></div>
           </div>
+          <button class="learn-more-button" onclick="learnMore('visit1')">Learn More About This Visit</button>
 
           <!-- Visit 11 -->
           <div class="visit">Visit 11</div>
@@ -422,6 +443,7 @@ body {
               <p>Fermit Replacement</p>
             </div></div>
           </div>
+          <button class="learn-more-button" onclick="learnMore('visit1')">Learn More About This Visit</button>
 
           <!-- Visit 12 -->
           <div class="visit">Visit 12</div>
@@ -436,6 +458,7 @@ body {
               <p>Implant Maintencance Services (removed & cleaning prosthetic & abutments)</p>
             </div></div>
           </div>
+          <button class="learn-more-button" onclick="learnMore('visit1')">Learn More About This Visit</button>
 
 
 
@@ -471,6 +494,7 @@ body {
       <p>Therapeutic Pulpotemy</p>
     </div></div>
   </div>
+  <button class="learn-more-button" onclick="learnMore('visit1')">Learn More About This Visit</button>
 
   <h2>Treatment Phase: Control</h2>
 
@@ -487,6 +511,7 @@ body {
       <p>Full Porcelain/Ceramic Crown</p>
     </div></div>
   </div>
+  <button class="learn-more-button" onclick="learnMore('visit1')">Learn More About This Visit</button>
 
   <!-- Visit 3 -->
   <div class="visit">Visit 3</div>
@@ -501,6 +526,7 @@ body {
       <p>Final Impression</p>
     </div></div>
   </div>
+  <button class="learn-more-button" onclick="learnMore('visit1')">Learn More About This Visit</button>
 
   <!-- Visit 4 -->
   <div class="visit">Visit 4</div>
@@ -515,7 +541,9 @@ body {
       <p>Crown Seat</p>
     </div></div>
   </div>
+  <button class="learn-more-button" onclick="learnMore('visit1')">Learn More About This Visit</button>
   </div>
+  
 
   <!--SINGLE CROWN END-->
 
@@ -553,6 +581,7 @@ body {
                 <p>Root Canal on Molar Tooth</p>
                 </div></div>
               </div>
+              <button class="learn-more-button" onclick="learnMore('visit1')">Learn More About This Visit</button>
 
               <!-- Visit 2 -->
   <div class="visit">Visit 2</div>
@@ -567,6 +596,7 @@ body {
       <p>Rinish RCT</p>
     </div></div>
   </div>
+  <button class="learn-more-button" onclick="learnMore('visit1')">Learn More About This Visit</button>
 
              <!-- Visit 3 -->
              <div class="visit">Visit 3</div>
@@ -581,6 +611,7 @@ body {
                  <p>Post Op</p>
                </div></div>
              </div>
+             <button class="learn-more-button" onclick="learnMore('visit1')">Learn More About This Visit</button>
 
           </div>
 
@@ -610,6 +641,7 @@ body {
         <p>Full Upper Denture</p>
       </div></div>
       </div>
+      <button class="learn-more-button" onclick="learnMore('visit1')">Learn More About This Visit</button>
 
       <!-- Visit 2 -->
       <div class="visit">Visit 2</div>
@@ -624,6 +656,7 @@ body {
           <p>Final Impression</p>
         </div></div>
       </div>
+      <button class="learn-more-button" onclick="learnMore('visit1')">Learn More About This Visit</button>
 
       <!-- Visit 3 -->
       <div class="visit">Visit 3</div>
@@ -638,6 +671,7 @@ body {
           <p>Occlusal Rims</p>
         </div></div>
       </div>
+      <button class="learn-more-button" onclick="learnMore('visit1')">Learn More About This Visit</button>
 
       <!-- Visit 4 -->
       <div class="visit">Visit 4</div>
@@ -652,6 +686,7 @@ body {
           <p>Wax Try In</p>
         </div></div>
       </div>
+      <button class="learn-more-button" onclick="learnMore('visit1')">Learn More About This Visit</button>
 
       <!-- Visit 5 -->
       <div class="visit">Visit 5</div>
@@ -666,6 +701,7 @@ body {
           <p>Deliver Denture</p>
         </div></div>
       </div>
+      <button class="learn-more-button" onclick="learnMore('visit1')">Learn More About This Visit</button>
 
       <!-- Visit 6 -->
       <div class="visit">Visit 6</div>
@@ -680,6 +716,7 @@ body {
           <p>Adjust No Charge 6 Months from Purchase</p>
         </div></div>
       </div>
+      <button class="learn-more-button" onclick="learnMore('visit1')">Learn More About This Visit</button>
 
       <!-- Visit 7 -->
       <div class="visit">Visit 7</div>
@@ -694,6 +731,7 @@ body {
           <p>Adjust No Charge 6 Months from Purchase</p>
         </div></div>
       </div>
+      <button class="learn-more-button" onclick="learnMore('visit1')">Learn More About This Visit</button>
 
       <!-- Visit 8 -->
       <div class="visit">Visit 8</div>
@@ -708,6 +746,7 @@ body {
           <p>Adjust No Charge 6 Months from Purchase</p>
         </div></div>
       </div>
+      <button class="learn-more-button" onclick="learnMore('visit1')">Learn More About This Visit</button>
 
 
   </div>
@@ -739,6 +778,7 @@ body {
       <p>Full Lower Denture</p>
     </div></div>
     </div>
+    <button class="learn-more-button" onclick="learnMore('visit1')">Learn More About This Visit</button>
 
     <!-- Visit 2 -->
     <div class="visit">Visit 2</div>
@@ -753,6 +793,7 @@ body {
         <p>Final Impression</p>
       </div></div>
     </div>
+    <button class="learn-more-button" onclick="learnMore('visit1')">Learn More About This Visit</button>
 
     <!-- Visit 3 -->
     <div class="visit">Visit 3</div>
@@ -767,6 +808,7 @@ body {
         <p>Occlusal Rims</p>
       </div></div>
     </div>
+    <button class="learn-more-button" onclick="learnMore('visit1')">Learn More About This Visit</button>
 
     <!-- Visit 4 -->
     <div class="visit">Visit 4</div>
@@ -781,6 +823,7 @@ body {
         <p>Wax Try In</p>
       </div></div>
     </div>
+    <button class="learn-more-button" onclick="learnMore('visit1')">Learn More About This Visit</button>
 
     <!-- Visit 5 -->
     <div class="visit">Visit 5</div>
@@ -795,6 +838,7 @@ body {
         <p>Deliver Denture</p>
       </div></div>
     </div>
+    <button class="learn-more-button" onclick="learnMore('visit1')">Learn More About This Visit</button>
 
     <!-- Visit 6 -->
     <div class="visit">Visit 6</div>
@@ -809,6 +853,7 @@ body {
         <p>Adjust No Charge 6 Months from Purchase</p>
       </div></div>
     </div>
+    <button class="learn-more-button" onclick="learnMore('visit1')">Learn More About This Visit</button>
 
     <!-- Visit 7 -->
     <div class="visit">Visit 7</div>
@@ -823,6 +868,7 @@ body {
         <p>Adjust No Charge 6 Months from Purchase</p>
       </div></div>
     </div>
+    <button class="learn-more-button" onclick="learnMore('visit1')">Learn More About This Visit</button>
 
     <!-- Visit 8 -->
     <div class="visit">Visit 8</div>
@@ -837,6 +883,7 @@ body {
         <p>Adjust No Charge 6 Months from Purchase</p>
       </div></div>
     </div>
+    <button class="learn-more-button" onclick="learnMore('visit1')">Learn More About This Visit</button>
 
 
 </div>
@@ -874,6 +921,7 @@ body {
       <p>Full Lower Denture</p>
     </div></div>
     </div>
+    <button class="learn-more-button" onclick="learnMore('visit1')">Learn More About This Visit</button>
 
     <!-- Visit 2 -->
     <div class="visit">Visit 2</div>
@@ -892,6 +940,7 @@ body {
         <p>Final Impression</p>
       </div></div>
     </div>
+    <button class="learn-more-button" onclick="learnMore('visit1')">Learn More About This Visit</button>
 
     <!-- Visit 3 -->
     <div class="visit">Visit 3</div>
@@ -910,6 +959,7 @@ body {
         <p>Occlusal Rims</p>
       </div></div>
     </div>
+    <button class="learn-more-button" onclick="learnMore('visit1')">Learn More About This Visit</button>
 
     <!-- Visit 4 -->
     <div class="visit">Visit 4</div>
@@ -928,6 +978,7 @@ body {
         <p>Wax Try In</p>
       </div></div>
     </div>
+    <button class="learn-more-button" onclick="learnMore('visit1')">Learn More About This Visit</button>
 
     <!-- Visit 5 -->
     <div class="visit">Visit 5</div>
@@ -946,6 +997,7 @@ body {
         <p>Deliver Denture</p>
       </div></div>
     </div>
+    <button class="learn-more-button" onclick="learnMore('visit1')">Learn More About This Visit</button>
 
     <!-- Visit 6 -->
     <div class="visit">Visit 6</div>
@@ -960,6 +1012,7 @@ body {
         <p>Adjust No Charge 6 Months from Purchase</p>
       </div></div>
     </div>
+    <button class="learn-more-button" onclick="learnMore('visit1')">Learn More About This Visit</button>
 
     <!-- Visit 7 -->
     <div class="visit">Visit 7</div>
@@ -974,6 +1027,7 @@ body {
         <p>Adjust No Charge 6 Months from Purchase</p>
       </div></div>
     </div>
+    <button class="learn-more-button" onclick="learnMore('visit1')">Learn More About This Visit</button>
 
     <!-- Visit 8 -->
     <div class="visit">Visit 8</div>
@@ -988,6 +1042,7 @@ body {
         <p>Adjust No Charge 6 Months from Purchase</p>
       </div></div>
     </div>
+    <button class="learn-more-button" onclick="learnMore('visit1')">Learn More About This Visit</button>
 
 
 </div>
