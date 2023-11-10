@@ -107,11 +107,89 @@
   display: none;
 }
 
+/* Define grid styles */
+.grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        gap: 10px; /* Adjust the gap between grid items */
+      }
+  
+      /* Define item styles (optional) */
+      .grid-item {
+        border: 1px solid #000;
+        padding: 20px;
+        text-align: center;
+      }
+
+
+
+/* Single Implant */
+
+body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: left;
+    }
+
+    h2 {
+      text-align: left;
+    }
+
+    .box {
+      border: thin solid rgb(216, 216, 216);
+      box-shadow: 0px 3px 3px #747474;
+      margin-bottom: 20px;
+    }
+
+    .visit-section {
+        border: thin solid;
+        border-color: rgb(225,230,238);
+    }
+
+    .visit {
+      background-color: #fff;
+      padding: 10px;
+      text-align: left;
+      font-size: large;
+      font-weight: 700;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .grid-container-codes-title {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 10px;
+      background-color: rgb(225,230,238);
+    }
+    
+    
+    .grid-container-codes {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 10px;
+      background-color: #fff;
+    }
+
+    .OR {
+      background-color: #fff;
+      padding: 10px;
+      text-align: center;
+      font-weight: 700;
+    }
+
+    /* Single Implant */
+
     </style>
 
   </head>
   <body>
     <main>
+
 
         <div class="flex-container">
             <div class="flex-items" onclick="enable_single_implant()"><a href="#" class="myButton">Single Implant</a></div>
@@ -119,46 +197,303 @@
             <div class="flex-items" onclick="enable_root_canal()"><a href="#" class="myButton">Root Canal</a></div>
          </div>
 
+
+         <!--SINGLE IMPLANT START-->
+
          <div class="single-implant" id="single-implant">
-            <H1>Single Implant</H1>
-            <H2>Treatment Phase: Definitive</H2>
-            <p>Visit 1 - D9310 - Professional Consult</p>
-            <p>Visit 2 - D6000 - Implant Measurement</p>
-            <p>Visit 2 - D0366 - CT Capture Full Arch Mx (use this code for Maxillary Arch)</p>
-            <p>Visit 2 - D0365 - CT Capture Full Arch Mn (use this code for Mandibular Arch)</p>
-            <p>Visit 2 - D0367 - CT Capture Full Arch (use this code if placing implants on both archs)</p>
-            <p>Visit 3 - D6010 - Endosteal Implant Placement (use this code for each implant placement)</p>
-            <p>Visit 4 - D7998 - Post Op (Use this code after each implant placement. Multiple implants placed during the same surgery appointment need one Post Op)</p>
-            <p>Visit 5 - D6011 - Second Stage Implant Surgery (use this code for each implant placement)</p>
-            <p>Visit 6 - D6065 - Implant Supported ACC (use this code for ACC implant crown)</p>
-            <p>Visit 6 - D6066 - Implant Supported PFM (use this code for PFM crown)</p>
-            <p>Visit 7 - D2703.T - Final Impression per tooth (use this code for each implant crown)</p>
-            <p>Visit 8 - D2701.T - Implant Crown Seat (use this code for each crown seat)</p>
-            <p>Visit 9 - D6080 - Implant Maintenance (use a single code for maintenance of multiple implants)</p>
-            <p>Visit 10 - D9944 - Occlusal Guard Full Arch</p>
+          <h1>Single Implant</h1>
+          <h2>Treatment Phase: Definitive</h2>
+        
+          <!-- Visit 1 -->
+          <div class="visit">Visit 1</div>
+          <div class="box">
+            <div class="grid-container-codes-title">
+              <p>Code</p>
+              <p>Description</p>
+            </div>
+            <div class="visit-section">
+            <div class="grid-container-codes">
+              <p>D9310</p>
+              <p>Professional Consult</p>
+            </div></div>
           </div>
+        
+          <!-- Visit 2 -->
+          <div class="visit">Visit 2</div>
+          <div class="box">
+            <div class="grid-container-codes-title">
+              <p>Code</p>
+              <p>Description</p>
+            </div>
+            <div class="visit-section">
+            <div class="grid-container-codes">
+              <p>D6000</p>
+              <p>Implant Measurement</p>
+            </div>
+            <div class="grid-container-codes">
+              <p>D0366</p>
+              <p>CT Capture Full Arch Mx</p>
+            </div></div>
+            <!-- OR -->
+            <div class="OR">or...</div>
+            <div class="visit-section">
+            <div class="grid-container-codes">
+                <p>D6000</p>
+                <p>Implant Measurement</p>
+            </div>
+            <div class="grid-container-codes">
+              <p>D0366</p>
+              <p>CT Capture Full Arch Mn</p>
+            </div></div>
+            <!-- OR -->
+            <div class="OR">or...</div>
+            <div class="visit-section">
+            <div class="grid-container-codes">
+                <p>D6000</p>
+                <p>Implant Measurement</p>
+            </div>
+            <div class="grid-container-codes">
+              <p>D0366</p>
+              <p>CT Capture Full Arch</p>
+            </div></div>
+          </div>
+        
+          <!-- Visit 3 -->
+          <div class="visit">Visit 3</div>
+          <div class="box">
+            <div class="grid-container-codes-title">
+              <p>Code</p>
+              <p>Description</p>
+            </div>
+            <div class="visit-section">
+            <div class="grid-container-codes">
+              <p>D6010</p>
+              <p>Endosteal Implant Placement</p>
+            </div></div>
+          </div>
+        
+          <!-- Visit 4 -->
+          <div class="visit">Visit 4</div>
+          <div class="box">
+            <div class="grid-container-codes-title">
+              <p>Code</p>
+              <p>Description</p>
+            </div>
+            <div class="visit-section">
+            <div class="grid-container-codes">
+              <p>D7998</p>
+              <p>Post Op</p>
+            </div></div>
+          </div>
+        
+          <!-- Visit 5 -->
+          <div class="visit">Visit 5</div>
+          <div class="box">
+            <div class="grid-container-codes-title">
+              <p>Code</p>
+              <p>Description</p>
+            </div>
+            <div class="visit-section">
+            <div class="grid-container-codes">
+              <p>D6011</p>
+              <p>Second Stage Implant Surgery</p>
+            </div></div>
+          </div>
+        
+          <!-- Visit 6 -->
+          <div class="visit">Visit 6</div>
+          <div class="box">
+            <div class="grid-container-codes-title">
+              <p>Code</p>
+              <p>Description</p>
+            </div>
+            <div class="visit-section">
+            <div class="grid-container-codes">
+              <p>D6065</p>
+              <p>Implant Supported ACC</p>
+            </div></div>
+            <!-- OR -->
+            <div class="OR">or...</div>
+            <div class="visit-section">
+            <div class="grid-container-codes">
+              <p>D6066</p>
+              <p>Implant Supported PFM</p>
+            </div></div>
+          </div>
+        
+          <!-- Visit 7 -->
+          <div class="visit">Visit 7</div>
+          <div class="box">
+            <div class="grid-container-codes-title">
+              <p>Code</p>
+              <p>Description</p>
+            </div>
+            <div class="visit-section">
+            <div class="grid-container-codes">
+              <p>D2703.T</p>
+              <p>Final Impression Per Tooth</p>
+            </div></div>
+          </div>
+        
+          <!-- Visit 8 -->
+          <div class="visit">Visit 8</div>
+          <div class="box">
+            <div class="grid-container-codes-title">
+              <p>Code</p>
+              <p>Description</p>
+            </div>
+            <div class="visit-section">
+            <div class="grid-container-codes">
+              <p>D2701.T</p>
+              <p>Implant Crown Seat</p>
+            </div></div>
+          </div>
+          </div>
+
+
+        <!--SINGLE IMPLANT END-->
+
+
+<!--SINGLE Crown Start-->
 
           <div class="single-crown" id="single-crown">
-            <H1>Single Crown</H1>
-            <H2>Treatment Phase: Control</H2>
-            <p>Visit 1 - D2950 - Core Build-Up w/any pins (use this code if build-up, caries excavation, or existing crown removal is necessary)</p>
-            <p1>NOTE: If root canal is required, see Root Canal and add the codes to the control phase.</p1>
-            <P>Visit 1 - D3220 - Therapeutic Pulpotemy (use this code if a root canal is planned prior to placing a crown)</P>
-            <H2>Treatment Phase: Definitive</H2>
-            <p>Visit 2 - D2740 - Full Porcelain/Ceramic Crown</p>
-            <p>Visit 3 - D2703 - Final Impression</p>
-            <p>Visit 4 - D2703 - Crown Seat</p>
-          </div>
+            <h1>Single Crown</h1>
+  <h2>Treatment Phase: Control</h2>
+
+  <!-- Visit 1 -->
+  <div class="visit">Visit 1</div>
+  <div class="box">
+    <div class="grid-container-codes-title">
+      <p>Code</p>
+      <p>Description</p>
+    </div>
+    <div class="visit-section">
+    <div class="grid-container-codes">
+      <p>D2950</p>
+      <p>Core Build-Up w/any pins</p>
+    </div></div>
+    <!-- OR -->
+    <div class="OR">or...</div>
+    <div class="visit-section">
+    <div class="grid-container-codes">
+      <p>D3220</p>
+      <p>Therapeutic Pulpotemy</p>
+    </div></div>
+  </div>
+
+  <h2>Treatment Phase: Control</h2>
+
+  <!-- Visit 2 -->
+  <div class="visit">Visit 2</div>
+  <div class="box">
+    <div class="grid-container-codes-title">
+      <p>Code</p>
+      <p>Description</p>
+    </div>
+    <div class="visit-section">
+    <div class="grid-container-codes">
+      <p>D2740</p>
+      <p>Full Porcelain/Ceramic Crown</p>
+    </div></div>
+  </div>
+
+  <!-- Visit 3 -->
+  <div class="visit">Visit 3</div>
+  <div class="box">
+    <div class="grid-container-codes-title">
+      <p>Code</p>
+      <p>Description</p>
+    </div>
+    <div class="visit-section">
+    <div class="grid-container-codes">
+      <p>D2703</p>
+      <p>Final Impression</p>
+    </div></div>
+  </div>
+
+  <!-- Visit 4 -->
+  <div class="visit">Visit 4</div>
+  <div class="box">
+    <div class="grid-container-codes-title">
+      <p>Code</p>
+      <p>Description</p>
+    </div>
+    <div class="visit-section">
+    <div class="grid-container-codes">
+      <p>D2703</p>
+      <p>Crown Seat</p>
+    </div></div>
+  </div>
+  </div>
+
+  <!--SINGLE CROWN END-->
+
+
+  <!--ROOT CANAL START-->
 
           <div class="root-canal" id="root-canal">
-            <H1>Root Canal</H1>
-            <H2>Treatment Phase: Control</H2>
-            <p>Visit 1 - D3310 - Root Canal on Anterior Tooth</p>
-            <p>Visit 1 - D3320 - Root Canal on Premolar Tooth</p>
-            <p>Visit 1 - D3330 - Root Canal on Molar Tooth</p>
-            <p>Visit 2 - FINISHRCT - Finish RCT (root canals are done in two appointments at ASDOH)
-            <p>Visit 3 - D7998 - Post Op
+              <h1>Root Canal</h1>
+              <h2>Treatment Phase: Control</h2>
+            
+              <!-- Visit 1 -->
+              <div class="visit">Visit 1</div>
+              <div class="box">
+                <div class="grid-container-codes-title">
+                  <p>Code</p>
+                  <p>Description</p>
+                </div>
+                <div class="visit-section">
+                <div class="grid-container-codes">
+                  <p>D3310</p>
+                  <p>Root Canal on Anterior Tooth</p>
+                </div></div>
+                <!-- OR -->
+                <div class="OR">or...</div>
+                <div class="visit-section">
+                <div class="grid-container-codes">
+                <p>D3320</p>
+                <p>Root Canal on Premolar Tooth</p>
+                </div></div>
+                <!-- OR -->
+                <div class="OR">or...</div>
+                <div class="visit-section">
+                <div class="grid-container-codes">
+                <p>D3330</p>
+                <p>Root Canal on Molar Tooth</p>
+                </div></div>
+              </div>
+
+              <!-- Visit 2 -->
+  <div class="visit">Visit 2</div>
+  <div class="box">
+    <div class="grid-container-codes-title">
+      <p>Code</p>
+      <p>Description</p>
+    </div>
+    <div class="visit-section">
+    <div class="grid-container-codes">
+      <p>FINISHRCT</p>
+      <p>Rinish RCT</p>
+    </div></div>
+  </div>
+
+             <!-- Visit 3 -->
+             <div class="visit">Visit 2</div>
+             <div class="box">
+               <div class="grid-container-codes-title">
+                 <p>Code</p>
+                 <p>Description</p>
+               </div>
+               <div class="visit-section">
+               <div class="grid-container-codes">
+                 <p>D7998</p>
+                 <p>Post Op</p>
+               </div></div>
+             </div>
+
           </div>
+
+  <!-- ROOT CANAL END -->
 
     </main>
 
